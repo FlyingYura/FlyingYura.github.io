@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оренда спортивного обладнання</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#equipment">Обладнання</a></li>
+                <li><a href="#rentals">Мої оренди</a></li>
+                <li><a href="#payment">Оплата</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="equipment">
+            <h2>Доступне обладнання</h2>
+            <div class="grid-container">
+                <div class="item">
+                    <img src="bike.jpg" alt="Велосипед">
+                    <h3>Велосипед</h3>
+                    <p>Ціна: 200 грн/день</p>
+                    <button>Орендувати</button>
+                </div>
+                <div class="item">
+                    <img src="skis.jpg" alt="Лижі">
+                    <h3>Лижі</h3>
+                    <p>Ціна: 300 грн/день</p>
+                    <button>Орендувати</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="rentals">
+            <h2>Мої оренди</h2>
+            <p>Наразі у вас немає активних оренд.</p>
+        </section>
+
+        <section id="payment">
+            <h2>Оплата</h2>
+            <form>
+                <label for="card-number">Номер картки:</label>
+                <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                <button type="submit">Оплатити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Контакти: yurii.prokopiv.oi.2023@lpnu.ua | Тел: +380980986653</p>
+    </footer>
+
+</body>
+</html>
