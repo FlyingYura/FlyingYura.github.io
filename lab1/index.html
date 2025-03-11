@@ -3,58 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оренда спортивного обладнання</title>
+    <title>Оренда спорядження</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
                 <li><a href="#equipment">Обладнання</a></li>
-                <li><a href="#rentals">Мої оренди</a></li>
+                <li class="rental-icon"><a href="#rentals"><i class="fas fa-shopping-cart"></i></a></li>
                 <li><a href="#payment">Оплата</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section id="equipment">
-            <h2>Доступне обладнання</h2>
-            <div class="grid-container">
-                <div class="item">
-                    <img src="bike.jpg" alt="Велосипед">
-                    <h3>Велосипед</h3>
-                    <p>Ціна: 200 грн/день</p>
-                    <button>Орендувати</button>
-                </div>
-                <div class="item">
-                    <img src="skis.jpg" alt="Лижі">
-                    <h3>Лижі</h3>
-                    <p>Ціна: 300 грн/день</p>
-                    <button>Орендувати</button>
-                </div>
+    
+    <h1 class="title">Оренда спорядження</h1>
+    
+    <section id="equipment" class="section">
+        <div class="grid-container">
+            <div class="item">
+                <img src="bike.jpg" alt="Велосипед">
+                <h3>Велосипед</h3>
+                <p>Ціна: 200 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
             </div>
-        </section>
 
-        <section id="rentals">
-            <h2>Мої оренди</h2>
-            <p>Наразі у вас немає активних оренд.</p>
-        </section>
+            <div class="item">
+                <img src="skis.jpg" alt="Лижі">
+                <h3>Лижі</h3>
+                <p>Ціна: 300 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
+            
+            <div class="item">
+                <img src="kayak.jpeg" alt="Каяк">
+                <h3>Каяк</h3>
+                <p>Ціна: 400 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
 
-        <section id="payment">
+            <div class="item">
+                <img src="rollers.jpeg" alt="Ролики">
+                <h3>Ролики</h3>
+                <p>Ціна: 150 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
+                
+            <div class="item">
+                <img src="skateboard.jpg" alt="Скейтборд">
+                <h3>Скейтборд</h3>
+                <p>Ціна: 180 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
+                
+            <div class="item">
+                <img src="golf.jpg" alt="Знаряддя для гольфу">
+                <h3>Знаряддя для гольфу</h3>
+                <p>Ціна: 800 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
+
+            <div class="item">
+                <img src="ices.jpg" alt="Ковзани">
+                <h3>Ковзани</h3>
+                <p>Ціна: 200 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
+            <div class="item">
+                <img src="f.jpg" alt="Футбольний м'яч">
+                <h3>Футбольний м'яч</h3>
+                <p>Ціна: 150 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
+            <div class="item">
+                <img src="tennis.jpg" alt="Набір Тенісних Ракеток">
+                <h3>Набір Тенісних Ракеток</h3>
+                <p>Ціна: 150 грн/день</p>
+                <button onclick="goToPayment()">Орендувати</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="rentals" class="section">
+        <h2>Мої оренди</h2>
+    
+        <div class="rental-card">
+            <h3>Ви ще не орендували спорядження</h3>
+            <p>Почніть орендувати сьогодні, вибравши спорядження в розділі "Обладнання".</p>
+            <button onclick="document.location.href='#equipment'">Перейти до обладнання</button>
+        </div>
+    </section>
+
+    
+    <section id="payment" class="section">
+        <div class="payment-form">
             <h2>Оплата</h2>
-            <form>
-                <label for="card-number">Номер картки:</label>
-                <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
-                <button type="submit">Оплатити</button>
-            </form>
-        </section>
-    </main>
+            <label for="card-number">Номер картки:</label>
+            <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
 
+            <label for="expiry">Термін дії:</label>
+            <input type="text" id="expiry" placeholder="MM/YY">
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="XXX">
+
+            <button>Оплатити</button>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Контакти</h2>
+        <p>Email: yurii.prokopiv.oi.2023@lpnu.ua</p>
+        <p>Телефон: +380980986653</p>
+    </section>
+    
     <footer>
-        <p>Контакти: yurii.prokopiv.oi.2023@lpnu.ua | Тел: +380980986653</p>
+        <p>Лабораторна робота №1 Оренда Спортивного Обладнання</p>
+        <p><a href="https://github.com/FlyingYura" target="_blank">Мій GitHub</a></p>
     </footer>
-
+    
+    <script>
+        function goToPayment() {
+            document.getElementById("payment").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>
+
+
+
+
+
+
