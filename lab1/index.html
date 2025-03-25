@@ -7,134 +7,72 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
+<script src="script.js"></script>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#equipment">Обладнання</a></li>
-                <li class="rental-icon"><a href="#rentals"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#payment">Оплата</a></li>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="equipment.html">Обладнання</a></li>
+                <li class="rental-icon"><a href="rentals.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="payment.html">Оплата</a></li>
+                <li><a href="contact.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
-    
-    <h1 class="title">Оренда спорядження</h1>
-    
-    <section id="equipment" class="section">
-        <div class="grid-container">
-            <div class="item">
-                <img src="bike.jpg" alt="Велосипед">
-                <h3>Велосипед</h3>
-                <p>Ціна: 200 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
-            </div>
 
-            <div class="item">
-                <img src="skis.jpg" alt="Лижі">
-                <h3>Лижі</h3>
-                <p>Ціна: 300 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
-            </div>
-            
-            <div class="item">
-                <img src="kayak.jpeg" alt="Каяк">
-                <h3>Каяк</h3>
-                <p>Ціна: 400 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
-            </div>
+    <section class="hero">
+        <h1 class="title">ОРЕНДА СПОРТИВНОГО СПОРЯДЖЕННЯ</h1>
+    </section>
 
-            <div class="item">
-                <img src="rollers.jpeg" alt="Ролики">
-                <h3>Ролики</h3>
-                <p>Ціна: 150 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
-            </div>
-                
-            <div class="item">
-                <img src="skateboard.jpg" alt="Скейтборд">
-                <h3>Скейтборд</h3>
-                <p>Ціна: 180 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
-            </div>
-                
-            <div class="item">
-                <img src="golf.jpg" alt="Знаряддя для гольфу">
-                <h3>Знаряддя для гольфу</h3>
-                <p>Ціна: 800 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
-            </div>
+    <section class="about">
+        <h2>Про наш сервіс</h2>
+        <p>Ми надаємо якісне спортивне спорядження для вашого активного відпочинку. У нас ви знайдете все необхідне для кемпінгу, туризму, лижного спорту, велопрогулянок та інших активностей.</p>
+        <p>Гарантуємо доступні ціни, швидке оформлення оренди та зручні умови повернення спорядження.</p>
+    </section>
 
-            <div class="item">
-                <img src="ices.jpg" alt="Ковзани">
-                <h3>Ковзани</h3>
-                <p>Ціна: 200 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
+    <section class="testimonial">
+        <h2>Що говорять наші клієнти</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-item">
+                <p>"Найкраще обладнання, яке я коли-небудь орендовувала! Це було чудово!"</p>
+                <h4>Олена, Київ</h4>
             </div>
-            <div class="item">
-                <img src="f.jpg" alt="Футбольний м'яч">
-                <h3>Футбольний м'яч</h3>
-                <p>Ціна: 150 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
-            </div>
-            <div class="item">
-                <img src="tennis.jpg" alt="Набір Тенісних Ракеток">
-                <h3>Набір Тенісних Ракеток</h3>
-                <p>Ціна: 150 грн/день</p>
-                <button onclick="goToPayment()">Орендувати</button>
+            <div class="testimonial-item">
+                <p>"Оренда пройшла дуже швидко, і я отримав все необхідне для моїх подорожей."</p>
+                <h4>Максим, Львів</h4>
             </div>
         </div>
     </section>
 
-    <section id="rentals" class="section">
-        <h2>Мої оренди</h2>
-    
-        <div class="rental-card">
-            <h3>Ви ще не орендували спорядження</h3>
-            <p>Почніть орендувати сьогодні, вибравши спорядження в розділі "Обладнання".</p>
-            <button onclick="document.location.href='#equipment'">Перейти до обладнання</button>
+    <section class="features">
+        <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Надійність</h3>
+            <p>Наше спорядження проходить регулярну перевірку якості.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-clock"></i>
+            <h3>Швидкість</h3>
+            <p>Оренда оформлюється всього за кілька хвилин.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Доступність</h3>
+            <p>Пропонуємо конкурентні ціни на все спорядження.</p>
         </div>
     </section>
 
-    
-    <section id="payment" class="section">
-        <div class="payment-form">
-            <h2>Оплата</h2>
-            <label for="card-number">Номер картки:</label>
-            <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
-
-            <label for="expiry">Термін дії:</label>
-            <input type="text" id="expiry" placeholder="MM/YY">
-
-            <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" placeholder="XXX">
-
-            <button>Оплатити</button>
-        </div>
+    <section class="cta">
+        <h2>Готові вирушити в подорож?</h2>
+        <p>Орендуйте спорядження прямо зараз та отримайте знижку на першу оренду!</p>
+        <a href="equipment.html" class="btn">Орендувати зараз</a>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Контакти</h2>
-        <p>Email: yurii.prokopiv.oi.2023@lpnu.ua</p>
-        <p>Телефон: +380980986653</p>
-    </section>
-    
     <footer>
         <p>Лабораторна робота №1 Оренда Спортивного Обладнання</p>
         <p><a href="https://github.com/FlyingYura" target="_blank">Мій GitHub</a></p>
     </footer>
-    
-    <script>
-        function goToPayment() {
-            document.getElementById("payment").scrollIntoView({ behavior: "smooth" });
-        }
-    </script>
 </body>
 </html>
-
-
-
-
-
-
