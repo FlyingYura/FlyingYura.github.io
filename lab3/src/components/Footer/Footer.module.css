@@ -1,0 +1,73 @@
+.footer {
+  background: var(--primary-color);
+  color: white;
+  padding: 30px 20px; /* Зменшено вертикальні відступи */
+  text-align: center;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLogo {
+  font-size: 1.8rem; /* Зменшено розмір шрифту */
+  font-weight: 700;
+  margin-bottom: 15px; /* Зменшено відступ */
+  color: var(--accent-color);
+  font-family: 'Oswald', sans-serif;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px; /* Зменшено відступи між іконками */
+  margin-bottom: 20px; /* Зменшено відступ */
+}
+
+.socialLink {
+  color: white;
+  font-size: 1.3rem; /* Зменшено розмір іконок */
+  transition: all 0.2s ease; /* Пришвидшено анімацію */
+  display: inline-block;
+}
+
+.socialLink:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px); /* Зменшено ефект при наведенні */
+}
+
+.copyright {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 15px; /* Зменшено відступ */
+  line-height: 1.4;
+}
+
+/* Додаткові оптимізації для малих екранів */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 15px;
+  }
+  
+  .footerLogo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .socialIcons {
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .socialLink {
+    font-size: 1.1rem;
+  }
+  
+  .copyright {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+}

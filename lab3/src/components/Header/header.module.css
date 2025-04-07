@@ -1,0 +1,172 @@
+.header {
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(11, 28, 46, 0.2);
+}
+
+.navContainer {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navLogoItem {
+  margin-right: auto; 
+}
+
+.navLogo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.navLogo:hover {
+  transform: scale(1.05);
+}
+
+.navLogo::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 10px;
+  right: 10px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 3px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navLogo:hover::after,
+.navLogo.active::after {
+  transform: scaleX(1);
+}
+
+/* Центральна навігація */
+.navCenter {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navItem {
+  position: relative;
+  padding: 10px 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 10px;
+  right: 10px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 3px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+  transform: scaleX(1);
+}
+
+.navLink.active {
+  color: var(--accent-color);
+}
+
+/* Кошик - правий край */
+.cartItem {
+  margin-left: auto; /* Відштовхує від логотипу */
+}
+
+.rentalLink {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.rentalIcon {
+  font-size: 22px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.rentalIcon:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.cartCounter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Анімації */
+@keyframes underlineGrow {
+  from { 
+    transform: scaleX(0); 
+    opacity: 0;
+  }
+  to { 
+    transform: scaleX(1); 
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.activePulse {
+  animation: pulse 1.5s infinite;
+}
