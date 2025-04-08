@@ -89,7 +89,7 @@
 }
 
 .paymentContent {
-  flex: 1; /* Вирівнює контент, щоб футер завжди був внизу */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
