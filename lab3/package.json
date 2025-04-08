@@ -1,6 +1,7 @@
 {
   "name": "lab3",
-  "private": true,
+  "homepage": "https://flyingyura.github.io/lab3/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
