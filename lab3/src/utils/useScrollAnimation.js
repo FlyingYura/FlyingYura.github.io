@@ -21,7 +21,6 @@ const useScrollAnimation = () => {
     animateOnScroll();
 
     return () => {
-      // Cleanup if needed
     };
   }, []);
 };

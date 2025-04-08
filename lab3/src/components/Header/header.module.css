@@ -64,7 +64,6 @@
   transform: scaleX(1);
 }
 
-/* Центральна навігація */
 .navCenter {
   display: flex;
   gap: 30px;
@@ -111,9 +110,8 @@
   color: var(--accent-color);
 }
 
-/* Кошик - правий край */
 .cartItem {
-  margin-left: auto; /* Відштовхує від логотипу */
+  margin-left: auto; 
 }
 
 .rentalLink {
@@ -149,7 +147,6 @@
   font-weight: bold;
 }
 
-/* Анімації */
 @keyframes underlineGrow {
   from { 
     transform: scaleX(0); 

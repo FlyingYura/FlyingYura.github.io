@@ -14,8 +14,8 @@ const testimonials = [
 
 const Testimonial = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true,  // Клас "inView" буде доданий тільки один раз
-    threshold: 0.3,     // Клас додається, коли 30% елемента видно
+    triggerOnce: true,  
+    threshold: 0.3,    
   });
 
   return (

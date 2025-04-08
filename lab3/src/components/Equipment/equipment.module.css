@@ -289,10 +289,10 @@
 
 .filterMenu {
   position: fixed;
-  top: 80px; /* Змінити з top: 80px */
+  top: 80px; 
   left: 0;
   width: 320px;
-  height: 100vh; /* Змінити з calc(100vh - 80px) */
+  height: 100vh;
   background: var(--primary-color);
   box-shadow: 5px 0 30px rgba(11, 28, 46, 0.3);
   padding: 20px;

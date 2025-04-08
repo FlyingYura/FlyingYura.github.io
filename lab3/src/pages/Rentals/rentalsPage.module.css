@@ -1,6 +1,5 @@
-/* Основні стилі секції */
 .section {
-  padding: 80px 20px;
+  padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -8,100 +7,262 @@
   align-items: center;
 }
 
-/* Заголовок */
 .sectionTitle {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--primary-color);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-/* Центрування повідомлення */
 .noRentals {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #666;
   text-align: center;
   margin-top: 50px;
 }
 
-/* Сітка товарів */
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-/* Картка орендованого товару */
-.item {
-  background: var(--card-bg);
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(11, 28, 46, 0.1);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
-}
-
-
-
-.itemContent {
-  padding: 25px;
-}
-
-.item h3 {
-  font-size: 1.5rem;
-  margin: 0 0 10px;
-  color: var(--primary-color);
-}
-
-.item p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-/* Група кнопок */
-.buttonGroup {
+.pageLayout {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 30px;
+  width: 100%;
 }
 
-/* Однакові кнопки */
-.rentalButton {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  width: 130px;
+.rentalList {
+  flex: 1;
+  max-width: 800px;
+}
+
+.rentalItem {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.rentalItem:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.itemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   border-radius: 8px;
-  font-size: 1rem;
+}
+
+.itemDetails {
+  flex-grow: 1;
+}
+
+.itemTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.itemSeller {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.priceInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.currentPrice {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+.rentalPeriod {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.quantityControl {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.itemActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.removeBtn, .payBtn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  min-width: 120px;
   text-align: center;
 }
 
-/* Кнопка "Видалити" */
 .removeBtn {
-  background-color: var(--error-color);
+  background-color: #f8f9fa;
+  color: #dc3545;
+  border: 1px solid #dc3545;
 }
 
 .removeBtn:hover {
-  background-color: #c82333;
-  transform: translateY(-2px);
+  background-color: #dc3545;
+  color: white;
 }
 
-/* Кнопка "Оплатити" */
 .payBtn {
   background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
 }
 
 .payBtn:hover {
   background-color: var(--primary-color);
-  transform: translateY(-2px);
+}
+
+.orderSummary {
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+}
+
+.summaryTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.summaryItems {
+  margin-bottom: 20px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.summaryItemName {
+  color: #555;
+}
+
+.summaryItemPrice {
+  font-weight: 600;
+}
+
+.summaryTotal {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+.checkoutButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.checkoutButton:hover {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .pageLayout {
+    flex-direction: column;
+  }
+  
+  .orderSummary {
+    width: 100%;
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rentalItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .itemImage {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .itemActions {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: row;
+  }
+  
+  .removeBtn, .payBtn {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .itemActions {
+    flex-direction: column;
+  }
 }

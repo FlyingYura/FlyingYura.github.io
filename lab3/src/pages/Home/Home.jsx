@@ -8,7 +8,6 @@ import styles from './home.module.css';
 const Home = () => {
   return (
     <main className={styles.home}>
-      {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Готові до незабутньої пригоди?</h1>
@@ -40,7 +39,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className={styles.aboutSection}>
         <div className={styles.aboutContainer}>
           <div className={styles.aboutContent}>
@@ -62,7 +60,6 @@ const Home = () => {
         </div>
       </section>
 
-{/* Features Section */}
 <section id="features" className={styles.featuresSection}>
   <FeatureBlock 
     title="Професійне обладнання - ваша гарантія безпеки"
@@ -99,7 +96,6 @@ const Home = () => {
   />
 </section>
 
-      {/* Testimonials Section */}
       <Testimonial />
     </main>
   );

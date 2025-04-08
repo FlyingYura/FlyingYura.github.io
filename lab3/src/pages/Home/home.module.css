@@ -3,7 +3,6 @@
   width: 100%;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -126,12 +125,10 @@
   color: var(--accent-color); 
 }
 
-/* Features Section */
 .featuresSection {
   width: 100%;
 }
 
-/* About Section */
 .aboutSection {
   width: 100%;
   min-height: 100vh; 
