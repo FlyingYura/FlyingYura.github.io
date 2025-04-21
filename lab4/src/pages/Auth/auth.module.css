@@ -1,0 +1,104 @@
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding: 40px 20px;
+    background-color: var(--light-bg);
+  }
+  
+  .authCard {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .authTitle {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+  
+  .authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .formLabel {
+    color: var(--dark-text);
+    font-weight: 600;
+  }
+  
+  .formInput {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .formInput:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+  }
+  
+  .authButton {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .authButton:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+  }
+  
+  .authButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .authError {
+    color: var(--error-color);
+    background-color: rgba(220, 53, 69, 0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .authFooter {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--dark-text);
+  }
+  
+  .authLink {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .authLink:hover {
+    text-decoration: underline;
+  }
