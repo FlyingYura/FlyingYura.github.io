@@ -1,0 +1,129 @@
+.contactSection {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .contactItem {
+    background-color: var(--card-bg);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(11, 28, 46, 0.05);
+    width: 280px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .contactIcon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .contactItem:hover .contactIcon {
+    color: var(--accent-color);
+  }
+  
+  .contactItem h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .contactItem p, 
+  .contactItem a {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .contactForm {
+    background-color: var(--card-bg);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(11, 28, 46, 0.05);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .formTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .formGroup textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    border-color: var(--highlight);
+    box-shadow: 0 0 0 3px rgba(26, 58, 95, 0.2);
+    outline: none;
+  }
+  
+  .submitButton {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .submitButton:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+  }
